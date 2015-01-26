@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Status" representedClassName="Status" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="groups" toMany="YES" deletionRule="Nullify" destinationEntity="StatusGroup" inverseName="statuses" inverseEntity="StatusGroup" syncable="YES"/>
+    </entity>
+    <entity name="StatusGroup" representedClassName="StatusGroup" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="statuses" toMany="YES" deletionRule="Nullify" destinationEntity="Status" inverseName="groups" inverseEntity="Status" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Status" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="StatusGroup" positionX="-126" positionY="-166" width="128" height="75"/>
+    </elements>
+</model>

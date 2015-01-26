@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DBManager.h"
+#import "ShareHeaders.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,18 @@
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    [VKSdk processOpenURL:url fromApplication:sourceApplication];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [DBManager sharedManager];
+    
     return YES;
 }
 

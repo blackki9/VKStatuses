@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F27650ED09DC67764ACDF6F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A9BE92333C77DD824A5FA1 /* libPods.a */; };
 		FD1224161A74FB8700EC2772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224151A74FB8700EC2772 /* main.m */; };
 		FD1224191A74FB8700EC2772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224181A74FB8700EC2772 /* AppDelegate.m */; };
 		FD12241C1A74FB8700EC2772 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12241B1A74FB8700EC2772 /* ViewController.m */; };
@@ -14,6 +15,11 @@
 		FD1224211A74FB8700EC2772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1224201A74FB8700EC2772 /* Images.xcassets */; };
 		FD1224241A74FB8700EC2772 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1224221A74FB8700EC2772 /* LaunchScreen.xib */; };
 		FD1224301A74FB8700EC2772 /* VKStatusesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12242F1A74FB8700EC2772 /* VKStatusesTests.m */; };
+		FD12243C1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD12243A1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld */; };
+		FD1224421A76231800EC2772 /* StatusGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224411A76231800EC2772 /* StatusGroup.m */; };
+		FD1224451A76231900EC2772 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224441A76231900EC2772 /* Status.m */; };
+		FD1224491A7623F500EC2772 /* ShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224481A7623F500EC2772 /* ShareManager.m */; };
+		FD12244C1A76241300EC2772 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12244B1A76241300EC2772 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EAB3DB8D8E303A9679E74DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		38B36714132A18961D6CC66A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		64A9BE92333C77DD824A5FA1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1224101A74FB8700EC2772 /* VKStatuses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKStatuses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1224141A74FB8700EC2772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1224151A74FB8700EC2772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,16 @@
 		FD1224291A74FB8700EC2772 /* VKStatusesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKStatusesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD12242E1A74FB8700EC2772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD12242F1A74FB8700EC2772 /* VKStatusesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKStatusesTests.m; sourceTree = "<group>"; };
+		FD12243B1A74FD5C00EC2772 /* VKStatuses.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKStatuses.xcdatamodel; sourceTree = "<group>"; };
+		FD1224401A76231800EC2772 /* StatusGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusGroup.h; sourceTree = "<group>"; };
+		FD1224411A76231800EC2772 /* StatusGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusGroup.m; sourceTree = "<group>"; };
+		FD1224431A76231900EC2772 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		FD1224441A76231900EC2772 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		FD1224471A7623F500EC2772 /* ShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareManager.h; sourceTree = "<group>"; };
+		FD1224481A7623F500EC2772 /* ShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareManager.m; sourceTree = "<group>"; };
+		FD12244A1A76241300EC2772 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		FD12244B1A76241300EC2772 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		FD12244D1A762B6500EC2772 /* ShareHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F27650ED09DC67764ACDF6F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +80,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91ABE2E32EF2C2DFD16D21C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB3DB8D8E303A9679E74DC /* Pods.debug.xcconfig */,
+				38B36714132A18961D6CC66A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8DA1466C704AD228BA0BD51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A9BE92333C77DD824A5FA1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD1224071A74FB8700EC2772 = {
 			isa = PBXGroup;
 			children = (
 				FD1224121A74FB8700EC2772 /* VKStatuses */,
 				FD12242C1A74FB8700EC2772 /* VKStatusesTests */,
 				FD1224111A74FB8700EC2772 /* Products */,
+				91ABE2E32EF2C2DFD16D21C9 /* Pods */,
+				F8DA1466C704AD228BA0BD51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +120,9 @@
 		FD1224121A74FB8700EC2772 /* VKStatuses */ = {
 			isa = PBXGroup;
 			children = (
+				FD1224461A76233500EC2772 /* shareManager */,
+				FD12243D1A74FFCB00EC2772 /* entities */,
+				FD1224391A74FD4800EC2772 /* model */,
 				FD1224171A74FB8700EC2772 /* AppDelegate.h */,
 				FD1224181A74FB8700EC2772 /* AppDelegate.m */,
 				FD12241A1A74FB8700EC2772 /* ViewController.h */,
@@ -98,6 +140,7 @@
 			children = (
 				FD1224141A74FB8700EC2772 /* Info.plist */,
 				FD1224151A74FB8700EC2772 /* main.m */,
+				FD12244D1A762B6500EC2772 /* ShareHeaders.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +162,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FD1224391A74FD4800EC2772 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FD12243A1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld */,
+				FD12244A1A76241300EC2772 /* DBManager.h */,
+				FD12244B1A76241300EC2772 /* DBManager.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FD12243D1A74FFCB00EC2772 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				FD1224431A76231900EC2772 /* Status.h */,
+				FD1224441A76231900EC2772 /* Status.m */,
+				FD1224401A76231800EC2772 /* StatusGroup.h */,
+				FD1224411A76231800EC2772 /* StatusGroup.m */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		FD1224461A76233500EC2772 /* shareManager */ = {
+			isa = PBXGroup;
+			children = (
+				FD1224471A7623F500EC2772 /* ShareManager.h */,
+				FD1224481A7623F500EC2772 /* ShareManager.m */,
+			);
+			path = shareManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD1224331A74FB8700EC2772 /* Build configuration list for PBXNativeTarget "VKStatuses" */;
 			buildPhases = (
+				8D2503C7B297A921BC979F74 /* Check Pods Manifest.lock */,
 				FD12240C1A74FB8700EC2772 /* Sources */,
 				FD12240D1A74FB8700EC2772 /* Frameworks */,
 				FD12240E1A74FB8700EC2772 /* Resources */,
+				F16DACA45E7BF5B43B3B8728 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +289,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D2503C7B297A921BC979F74 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F16DACA45E7BF5B43B3B8728 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD12240C1A74FB8700EC2772 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD12243C1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld in Sources */,
+				FD1224491A7623F500EC2772 /* ShareManager.m in Sources */,
+				FD1224451A76231900EC2772 /* Status.m in Sources */,
+				FD1224421A76231800EC2772 /* StatusGroup.m in Sources */,
 				FD12241C1A74FB8700EC2772 /* ViewController.m in Sources */,
 				FD1224191A74FB8700EC2772 /* AppDelegate.m in Sources */,
 				FD1224161A74FB8700EC2772 /* main.m in Sources */,
+				FD12244C1A76241300EC2772 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +454,11 @@
 		};
 		FD1224341A74FB8700EC2772 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EAB3DB8D8E303A9679E74DC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VKStatuses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,9 +466,11 @@
 		};
 		FD1224351A74FB8700EC2772 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B36714132A18961D6CC66A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VKStatuses/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +529,7 @@
 				FD1224351A74FB8700EC2772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD1224361A74FB8700EC2772 /* Build configuration list for PBXNativeTarget "VKStatusesTests" */ = {
 			isa = XCConfigurationList;
@@ -420,8 +538,22 @@
 				FD1224381A74FB8700EC2772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD12243A1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD12243B1A74FD5C00EC2772 /* VKStatuses.xcdatamodel */,
+			);
+			currentVersion = FD12243B1A74FD5C00EC2772 /* VKStatuses.xcdatamodel */;
+			path = VKStatuses.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FD1224081A74FB8700EC2772 /* Project object */;
 }
