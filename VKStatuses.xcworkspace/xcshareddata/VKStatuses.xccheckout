@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CD6A8484-28C3-4237-8152-96606617C649</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VKStatuses</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C5ABC435012821CAA8DC6081D8F4613D555974F9</key>
+		<string>https://github.com/blackki9/VKStatuses.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VKStatuses.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C5ABC435012821CAA8DC6081D8F4613D555974F9</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/blackki9/VKStatuses.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C5ABC435012821CAA8DC6081D8F4613D555974F9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5ABC435012821CAA8DC6081D8F4613D555974F9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VKStatuses</string>
+		</dict>
+	</array>
+</dict>
+</plist>

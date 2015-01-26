@@ -14,7 +14,7 @@
 {
     static dispatch_once_t once;
     static DBManager* sharedInstance = nil;
-    dispatch_once(^once, ^{
+    dispatch_once(&once, ^{
         sharedInstance = [[self alloc] init];
     });
     

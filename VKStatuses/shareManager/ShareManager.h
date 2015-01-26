@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @class Status;
+@class UIViewController;
 @protocol VKSdkDelegate;
 
 @interface ShareManager : NSObject <VKSdkDelegate>
 
 + (instancetype)sharedManager;
 
-- (void)shareStatus:(Status*)status;
+- (void)shareStatus:(Status*)status controller:(UIViewController*) controller;
 
 @end

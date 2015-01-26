@@ -10,7 +10,14 @@
 #import "Status.h"
 #import <VKSdk.h>
 
-static NSString* const vkAppId = @"";
+static NSString* const vkAppId = @"4749882 ";
+
+@interface ShareManager()
+
+@property (nonatomic, strong) Status* currentShareStatus;
+@property (nonatomic, strong) UIViewController * parentController;
+
+@end
 
 @implementation ShareManager
 #pragma mark - init
@@ -44,27 +51,47 @@ static NSString* const vkAppId = @"";
 
 #pragma mark - authorize
 
-- (void)authrizeUser
+- (void)authorizeUser
 {
-    [VKSdk authorize:<#(NSArray *)#>];
+    [VKSdk authorize:nil];
 }
 
 #pragma mark - share
 
-#warning TODO share status
-- (void)shareStatus:(Status*)status
+- (void)shareStatus:(Status*)status controller:(UIViewController*) controller
 {
+    self.currentShareStatus = status;
+    self.parentController = controller;
+    
+    [self authorizeUser];
+}
 
+- (void)shareStatusText:(NSString*)text
+{
+    VKShareDialogController* shareDialog = [VKShareDialogController new];
+    shareDialog.text = text;
+    // use uploadImages to upload internal images
+    
+    [shareDialog setCompletionHandler:^(VKShareDialogControllerResult result) {
+        [self.parentController dismissViewControllerAnimated:YES completion:nil];
+    }];
+    
+    [self.parentController presentViewController:shareDialog animated:YES completion:nil];
 }
 
 #pragma mark - VKSdkDelegate
 
 -(void) vkSdkReceivedNewToken:(VKAccessToken*) newToken
 {
-    
+    [self shareStatusText:self.currentShareStatus.text];
 }
 
 -(void) vkSdkUserDeniedAccess:(VKError*) authorizationError
+{
+    self.currentShareStatus = nil;
+}
+
+- (void)vkSdkTokenHasExpired:(VKAccessToken *)expiredToken
 {
     
 }

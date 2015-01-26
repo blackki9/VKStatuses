@@ -10,7 +10,6 @@
 		0F27650ED09DC67764ACDF6F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A9BE92333C77DD824A5FA1 /* libPods.a */; };
 		FD1224161A74FB8700EC2772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224151A74FB8700EC2772 /* main.m */; };
 		FD1224191A74FB8700EC2772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224181A74FB8700EC2772 /* AppDelegate.m */; };
-		FD12241C1A74FB8700EC2772 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12241B1A74FB8700EC2772 /* ViewController.m */; };
 		FD12241F1A74FB8700EC2772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD12241D1A74FB8700EC2772 /* Main.storyboard */; };
 		FD1224211A74FB8700EC2772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1224201A74FB8700EC2772 /* Images.xcassets */; };
 		FD1224241A74FB8700EC2772 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD1224221A74FB8700EC2772 /* LaunchScreen.xib */; };
@@ -20,6 +19,13 @@
 		FD1224451A76231900EC2772 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224441A76231900EC2772 /* Status.m */; };
 		FD1224491A7623F500EC2772 /* ShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224481A7623F500EC2772 /* ShareManager.m */; };
 		FD12244C1A76241300EC2772 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12244B1A76241300EC2772 /* DBManager.m */; };
+		FD1224531A765F9600EC2772 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224521A765F9600EC2772 /* DownloadManager.m */; };
+		FDE3B3091A7699B700FEAFF0 /* DownloadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B3081A7699B700FEAFF0 /* DownloadCommand.m */; };
+		FDE3B30C1A7699D400FEAFF0 /* ParseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B30B1A7699D400FEAFF0 /* ParseCommand.m */; };
+		FDE3B30F1A7699EB00FEAFF0 /* SaveEntitiesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B30E1A7699EB00FEAFF0 /* SaveEntitiesCommand.m */; };
+		FDE3B3121A7699FA00FEAFF0 /* ShareCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B3111A7699FA00FEAFF0 /* ShareCommand.m */; };
+		FDE3B3191A76AA0900FEAFF0 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B3181A76AA0900FEAFF0 /* Parser.m */; };
+		FDE3B31D1A76C07000FEAFF0 /* EntitySaver.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B31C1A76C07000FEAFF0 /* EntitySaver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +47,6 @@
 		FD1224151A74FB8700EC2772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD1224171A74FB8700EC2772 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD1224181A74FB8700EC2772 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD12241A1A74FB8700EC2772 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD12241B1A74FB8700EC2772 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD12241E1A74FB8700EC2772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD1224201A74FB8700EC2772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD1224231A74FB8700EC2772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -59,6 +63,22 @@
 		FD12244A1A76241300EC2772 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		FD12244B1A76241300EC2772 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		FD12244D1A762B6500EC2772 /* ShareHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareHeaders.h; sourceTree = "<group>"; };
+		FD1224511A765F9600EC2772 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		FD1224521A765F9600EC2772 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		FDE3B3071A7699B700FEAFF0 /* DownloadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadCommand.h; sourceTree = "<group>"; };
+		FDE3B3081A7699B700FEAFF0 /* DownloadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadCommand.m; sourceTree = "<group>"; };
+		FDE3B30A1A7699D400FEAFF0 /* ParseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseCommand.h; sourceTree = "<group>"; };
+		FDE3B30B1A7699D400FEAFF0 /* ParseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseCommand.m; sourceTree = "<group>"; };
+		FDE3B30D1A7699EB00FEAFF0 /* SaveEntitiesCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveEntitiesCommand.h; sourceTree = "<group>"; };
+		FDE3B30E1A7699EB00FEAFF0 /* SaveEntitiesCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveEntitiesCommand.m; sourceTree = "<group>"; };
+		FDE3B3101A7699FA00FEAFF0 /* ShareCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareCommand.h; sourceTree = "<group>"; };
+		FDE3B3111A7699FA00FEAFF0 /* ShareCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareCommand.m; sourceTree = "<group>"; };
+		FDE3B3141A76A11E00FEAFF0 /* CommonBlocks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonBlocks.h; sourceTree = "<group>"; };
+		FDE3B3151A76A1D500FEAFF0 /* BaseCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCommand.h; sourceTree = "<group>"; };
+		FDE3B3171A76AA0900FEAFF0 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		FDE3B3181A76AA0900FEAFF0 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		FDE3B31B1A76C07000FEAFF0 /* EntitySaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntitySaver.h; sourceTree = "<group>"; };
+		FDE3B31C1A76C07000FEAFF0 /* EntitySaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntitySaver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +140,17 @@
 		FD1224121A74FB8700EC2772 /* VKStatuses */ = {
 			isa = PBXGroup;
 			children = (
+				FDE3B31A1A76BFE300FEAFF0 /* saver */,
+				FDE3B3161A76A9FE00FEAFF0 /* parser */,
+				FDE3B3061A7699AA00FEAFF0 /* commands */,
+				FD1224541A765FB300EC2772 /* UI */,
+				FD12244F1A765F8A00EC2772 /* download */,
+				FD1224501A765F8A00EC2772 /* Resources */,
 				FD1224461A76233500EC2772 /* shareManager */,
 				FD12243D1A74FFCB00EC2772 /* entities */,
 				FD1224391A74FD4800EC2772 /* model */,
 				FD1224171A74FB8700EC2772 /* AppDelegate.h */,
 				FD1224181A74FB8700EC2772 /* AppDelegate.m */,
-				FD12241A1A74FB8700EC2772 /* ViewController.h */,
-				FD12241B1A74FB8700EC2772 /* ViewController.m */,
 				FD12241D1A74FB8700EC2772 /* Main.storyboard */,
 				FD1224201A74FB8700EC2772 /* Images.xcassets */,
 				FD1224221A74FB8700EC2772 /* LaunchScreen.xib */,
@@ -141,6 +165,7 @@
 				FD1224141A74FB8700EC2772 /* Info.plist */,
 				FD1224151A74FB8700EC2772 /* main.m */,
 				FD12244D1A762B6500EC2772 /* ShareHeaders.h */,
+				FDE3B3141A76A11E00FEAFF0 /* CommonBlocks.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -190,6 +215,63 @@
 				FD1224481A7623F500EC2772 /* ShareManager.m */,
 			);
 			path = shareManager;
+			sourceTree = "<group>";
+		};
+		FD12244F1A765F8A00EC2772 /* download */ = {
+			isa = PBXGroup;
+			children = (
+				FD1224511A765F9600EC2772 /* DownloadManager.h */,
+				FD1224521A765F9600EC2772 /* DownloadManager.m */,
+			);
+			path = download;
+			sourceTree = "<group>";
+		};
+		FD1224501A765F8A00EC2772 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD1224541A765FB300EC2772 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FDE3B3061A7699AA00FEAFF0 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				FDE3B3071A7699B700FEAFF0 /* DownloadCommand.h */,
+				FDE3B3081A7699B700FEAFF0 /* DownloadCommand.m */,
+				FDE3B30A1A7699D400FEAFF0 /* ParseCommand.h */,
+				FDE3B30B1A7699D400FEAFF0 /* ParseCommand.m */,
+				FDE3B30D1A7699EB00FEAFF0 /* SaveEntitiesCommand.h */,
+				FDE3B30E1A7699EB00FEAFF0 /* SaveEntitiesCommand.m */,
+				FDE3B3101A7699FA00FEAFF0 /* ShareCommand.h */,
+				FDE3B3111A7699FA00FEAFF0 /* ShareCommand.m */,
+				FDE3B3151A76A1D500FEAFF0 /* BaseCommand.h */,
+			);
+			path = commands;
+			sourceTree = "<group>";
+		};
+		FDE3B3161A76A9FE00FEAFF0 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				FDE3B3171A76AA0900FEAFF0 /* Parser.h */,
+				FDE3B3181A76AA0900FEAFF0 /* Parser.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		FDE3B31A1A76BFE300FEAFF0 /* saver */ = {
+			isa = PBXGroup;
+			children = (
+				FDE3B31B1A76C07000FEAFF0 /* EntitySaver.h */,
+				FDE3B31C1A76C07000FEAFF0 /* EntitySaver.m */,
+			);
+			path = saver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,13 +410,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD12243C1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld in Sources */,
+				FDE3B3091A7699B700FEAFF0 /* DownloadCommand.m in Sources */,
+				FDE3B30F1A7699EB00FEAFF0 /* SaveEntitiesCommand.m in Sources */,
+				FDE3B3191A76AA0900FEAFF0 /* Parser.m in Sources */,
+				FDE3B31D1A76C07000FEAFF0 /* EntitySaver.m in Sources */,
+				FDE3B3121A7699FA00FEAFF0 /* ShareCommand.m in Sources */,
 				FD1224491A7623F500EC2772 /* ShareManager.m in Sources */,
 				FD1224451A76231900EC2772 /* Status.m in Sources */,
 				FD1224421A76231800EC2772 /* StatusGroup.m in Sources */,
-				FD12241C1A74FB8700EC2772 /* ViewController.m in Sources */,
+				FDE3B30C1A7699D400FEAFF0 /* ParseCommand.m in Sources */,
 				FD1224191A74FB8700EC2772 /* AppDelegate.m in Sources */,
 				FD1224161A74FB8700EC2772 /* main.m in Sources */,
 				FD12244C1A76241300EC2772 /* DBManager.m in Sources */,
+				FD1224531A765F9600EC2772 /* DownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
