@@ -20,6 +20,11 @@
 		FD1224491A7623F500EC2772 /* ShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224481A7623F500EC2772 /* ShareManager.m */; };
 		FD12244C1A76241300EC2772 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12244B1A76241300EC2772 /* DBManager.m */; };
 		FD1224531A765F9600EC2772 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224521A765F9600EC2772 /* DownloadManager.m */; };
+		FDD0D9BA1A77C7E30042E72B /* StatusGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9B91A77C7E30042E72B /* StatusGroupCell.m */; };
+		FDD0D9BF1A77C82F0042E72B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9BE1A77C82F0042E72B /* MainViewController.m */; };
+		FDD0D9C21A77C8480042E72B /* StatusGroupsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9C11A77C8480042E72B /* StatusGroupsTableDataSource.m */; };
+		FDD0D9C51A77CCB30042E72B /* StatusGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9C41A77CCB30042E72B /* StatusGroupViewController.m */; };
+		FDD0D9C81A77CCC60042E72B /* StatusListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9C71A77CCC60042E72B /* StatusListDataSource.m */; };
 		FDE3B3091A7699B700FEAFF0 /* DownloadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B3081A7699B700FEAFF0 /* DownloadCommand.m */; };
 		FDE3B30C1A7699D400FEAFF0 /* ParseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B30B1A7699D400FEAFF0 /* ParseCommand.m */; };
 		FDE3B30F1A7699EB00FEAFF0 /* SaveEntitiesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE3B30E1A7699EB00FEAFF0 /* SaveEntitiesCommand.m */; };
@@ -65,6 +70,16 @@
 		FD12244D1A762B6500EC2772 /* ShareHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareHeaders.h; sourceTree = "<group>"; };
 		FD1224511A765F9600EC2772 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
 		FD1224521A765F9600EC2772 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		FDD0D9B81A77C7E30042E72B /* StatusGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusGroupCell.h; sourceTree = "<group>"; };
+		FDD0D9B91A77C7E30042E72B /* StatusGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusGroupCell.m; sourceTree = "<group>"; };
+		FDD0D9BD1A77C82F0042E72B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FDD0D9BE1A77C82F0042E72B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FDD0D9C01A77C8480042E72B /* StatusGroupsTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusGroupsTableDataSource.h; sourceTree = "<group>"; };
+		FDD0D9C11A77C8480042E72B /* StatusGroupsTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusGroupsTableDataSource.m; sourceTree = "<group>"; };
+		FDD0D9C31A77CCB30042E72B /* StatusGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusGroupViewController.h; sourceTree = "<group>"; };
+		FDD0D9C41A77CCB30042E72B /* StatusGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusGroupViewController.m; sourceTree = "<group>"; };
+		FDD0D9C61A77CCC60042E72B /* StatusListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusListDataSource.h; sourceTree = "<group>"; };
+		FDD0D9C71A77CCC60042E72B /* StatusListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusListDataSource.m; sourceTree = "<group>"; };
 		FDE3B3071A7699B700FEAFF0 /* DownloadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadCommand.h; sourceTree = "<group>"; };
 		FDE3B3081A7699B700FEAFF0 /* DownloadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadCommand.m; sourceTree = "<group>"; };
 		FDE3B30A1A7699D400FEAFF0 /* ParseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseCommand.h; sourceTree = "<group>"; };
@@ -236,8 +251,42 @@
 		FD1224541A765FB300EC2772 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FDD0D9BB1A77C82F0042E72B /* viewControllers */,
+				FDD0D9B71A77C7CD0042E72B /* cells */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		FDD0D9B71A77C7CD0042E72B /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				FDD0D9B81A77C7E30042E72B /* StatusGroupCell.h */,
+				FDD0D9B91A77C7E30042E72B /* StatusGroupCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		FDD0D9BB1A77C82F0042E72B /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDD0D9BC1A77C82F0042E72B /* datasource */,
+				FDD0D9BD1A77C82F0042E72B /* MainViewController.h */,
+				FDD0D9BE1A77C82F0042E72B /* MainViewController.m */,
+				FDD0D9C31A77CCB30042E72B /* StatusGroupViewController.h */,
+				FDD0D9C41A77CCB30042E72B /* StatusGroupViewController.m */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		FDD0D9BC1A77C82F0042E72B /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				FDD0D9C01A77C8480042E72B /* StatusGroupsTableDataSource.h */,
+				FDD0D9C11A77C8480042E72B /* StatusGroupsTableDataSource.m */,
+				FDD0D9C61A77CCC60042E72B /* StatusListDataSource.h */,
+				FDD0D9C71A77CCC60042E72B /* StatusListDataSource.m */,
+			);
+			path = datasource;
 			sourceTree = "<group>";
 		};
 		FDE3B3061A7699AA00FEAFF0 /* commands */ = {
@@ -412,6 +461,7 @@
 				FD12243C1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld in Sources */,
 				FDE3B3091A7699B700FEAFF0 /* DownloadCommand.m in Sources */,
 				FDE3B30F1A7699EB00FEAFF0 /* SaveEntitiesCommand.m in Sources */,
+				FDD0D9BF1A77C82F0042E72B /* MainViewController.m in Sources */,
 				FDE3B3191A76AA0900FEAFF0 /* Parser.m in Sources */,
 				FDE3B31D1A76C07000FEAFF0 /* EntitySaver.m in Sources */,
 				FDE3B3121A7699FA00FEAFF0 /* ShareCommand.m in Sources */,
@@ -422,6 +472,10 @@
 				FD1224191A74FB8700EC2772 /* AppDelegate.m in Sources */,
 				FD1224161A74FB8700EC2772 /* main.m in Sources */,
 				FD12244C1A76241300EC2772 /* DBManager.m in Sources */,
+				FDD0D9BA1A77C7E30042E72B /* StatusGroupCell.m in Sources */,
+				FDD0D9C81A77CCC60042E72B /* StatusListDataSource.m in Sources */,
+				FDD0D9C21A77C8480042E72B /* StatusGroupsTableDataSource.m in Sources */,
+				FDD0D9C51A77CCB30042E72B /* StatusGroupViewController.m in Sources */,
 				FD1224531A765F9600EC2772 /* DownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,7 +23,13 @@
 
 - (void)parseFileWithName:(NSString*)fileName completition:(CompletitionParseBlock)completition
 {
-    
+    NSArray* descriptions = [NSArray arrayWithContentsOfFile:fileName];
+    if(descriptions) {
+        completition(descriptions);
+    }
+    else {
+        completition(nil);
+    }
 }
 
 @end
