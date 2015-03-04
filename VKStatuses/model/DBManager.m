@@ -7,6 +7,8 @@
 //
 
 #import "DBManager.h"
+#define MR_SHORTHAND
+#import <CoreData+MagicalRecord.h>
 
 @implementation DBManager
 
@@ -19,6 +21,23 @@
     });
     
     return sharedInstance;
+}
+
+- (void)setupDB
+{
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"VKStatuses"];
+}
+
+- (void)save
+{
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
+        if(!error) {
+            NSLog(@"saved success");
+        }
+        else {
+            NSLog(@"save completed with error %@",[error localizedDescription]);
+        }
+    }];
 }
 
 @end

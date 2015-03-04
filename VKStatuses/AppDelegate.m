@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DBManager.h"
 #import "ShareHeaders.h"
+#import "DownloadCommand.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,8 @@
     // Override point for customization after application launch.
     
     [DBManager sharedManager];
+    
+    DownloadCommand* downloadCommand = [[DownloadCommand alloc] init];
     
     return YES;
 }

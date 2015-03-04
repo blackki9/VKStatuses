@@ -11,6 +11,7 @@
 
 typedef void (^CompletitionDownloadBlock)(NSString* filePath); //return path where downloaded file was saved
 typedef void (^CompletitionParseBlock)(NSArray* groups);//return parsed groups of statuses
+typedef void (^CompletitionLoadGroupsBlock)(NSArray* groups);
 
 typedef void (^CompletitionSaveBlock)();
 

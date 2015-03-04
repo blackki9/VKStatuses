@@ -16,7 +16,7 @@ static NSString* const vkAppId = @"4749882 ";
 
 @property (nonatomic, strong) Status* currentShareStatus;
 @property (nonatomic, strong) UIViewController * parentController;
-
+@property (nonatomic, strong) CompletitionShareBlock finishBlock;
 @end
 
 @implementation ShareManager
@@ -58,10 +58,11 @@ static NSString* const vkAppId = @"4749882 ";
 
 #pragma mark - share
 
-- (void)shareStatus:(Status*)status controller:(UIViewController*) controller
+- (void)shareStatus:(Status*)status controller:(UIViewController*) controller completition:(CompletitionShareBlock)finishBlock
 {
     self.currentShareStatus = status;
     self.parentController = controller;
+    self.finishBlock = finishBlock;
     
     [self authorizeUser];
 }
@@ -74,6 +75,9 @@ static NSString* const vkAppId = @"4749882 ";
     
     [shareDialog setCompletionHandler:^(VKShareDialogControllerResult result) {
         [self.parentController dismissViewControllerAnimated:YES completion:nil];
+        if(self.finishBlock) {//do we need this check?
+            self.finishBlock(result == VKShareDialogControllerResultDone);
+        }
     }];
     
     [self.parentController presentViewController:shareDialog animated:YES completion:nil];
@@ -93,7 +97,7 @@ static NSString* const vkAppId = @"4749882 ";
 
 - (void)vkSdkTokenHasExpired:(VKAccessToken *)expiredToken
 {
-    
+    self.currentShareStatus = nil;
 }
 
 @end

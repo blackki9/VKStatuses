@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CommonBlocks.h"
 
 @class Status;
 @class UIViewController;
@@ -16,6 +17,6 @@
 
 + (instancetype)sharedManager;
 
-- (void)shareStatus:(Status*)status controller:(UIViewController*) controller;
+- (void)shareStatus:(Status*)status controller:(UIViewController*) controller completition:(CompletitionShareBlock)finishBlock;
 
 @end

@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "BaseCommand.h"
 #import "CommonBlocks.h"
+#import <UIKit/UIKit.h>
 
+@class Status;
 
 @interface ShareCommand : NSObject <BaseCommand>
 
-@property (nonatomic, copy) NSString* text;
+@property (nonatomic, strong) Status* statusForShare;
 @property (nonatomic, strong) CompletitionShareBlock finishBlock;
-
+@property (nonatomic, strong) UIViewController* baseViewControllerForShare;
 @end

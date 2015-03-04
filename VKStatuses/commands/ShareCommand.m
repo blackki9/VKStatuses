@@ -7,17 +7,18 @@
 //
 
 #import "ShareCommand.h"
+#import "ShareManager.h"
 
 @implementation ShareCommand
 
 - (void)execute
 {
-    
+    [self shareText:self.statusForShare completition:self.finishBlock];
 }
 
-- (void)shareText:(NSString*)text completition:(CompletitionShareBlock)completition
+- (void)shareText:(Status*)status completition:(CompletitionShareBlock)completition
 {
-    
+    [[ShareManager sharedManager] shareStatus:status controller:self.baseViewControllerForShare completition:self.finishBlock];
 }
 
 @end

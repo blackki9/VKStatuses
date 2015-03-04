@@ -7,12 +7,31 @@
 //
 
 #import "StatusGroupsTableDataSource.h"
+#import "LoadGroupsCommand.h"
+
+#import "LoadGroupsCommand.h"
+
+@interface StatusGroupsTableDataSource()
+
+@property (nonatomic, strong) LoadGroupsCommand* loadCommand;
+@property (nonatomic, strong) NSArray* allGroups;
+@end
 
 @implementation StatusGroupsTableDataSource
 
 - (void)initializeData
 {
+    self.loadCommand = [[LoadGroupsCommand alloc] init];
     
+    self.allGroups = [NSArray array];
+    
+    __weak StatusGroupsTableDataSource* weakSelf = self;
+    
+    self.loadCommand.finishBlock = ^(NSArray* groups) {
+        weakSelf.allGroups = groups;
+    };
+    
+    [self.loadCommand execute];
 }
 
 
@@ -25,11 +44,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return self.allGroups.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
     return nil;
 }
 

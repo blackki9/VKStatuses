@@ -20,6 +20,7 @@
 		FD1224491A7623F500EC2772 /* ShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224481A7623F500EC2772 /* ShareManager.m */; };
 		FD12244C1A76241300EC2772 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD12244B1A76241300EC2772 /* DBManager.m */; };
 		FD1224531A765F9600EC2772 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1224521A765F9600EC2772 /* DownloadManager.m */; };
+		FD8981F01A98BAE300BD771A /* LoadGroupsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8981EF1A98BAE300BD771A /* LoadGroupsCommand.m */; };
 		FDD0D9BA1A77C7E30042E72B /* StatusGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9B91A77C7E30042E72B /* StatusGroupCell.m */; };
 		FDD0D9BF1A77C82F0042E72B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9BE1A77C82F0042E72B /* MainViewController.m */; };
 		FDD0D9C21A77C8480042E72B /* StatusGroupsTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0D9C11A77C8480042E72B /* StatusGroupsTableDataSource.m */; };
@@ -70,6 +71,8 @@
 		FD12244D1A762B6500EC2772 /* ShareHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareHeaders.h; sourceTree = "<group>"; };
 		FD1224511A765F9600EC2772 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
 		FD1224521A765F9600EC2772 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		FD8981EE1A98BAE300BD771A /* LoadGroupsCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadGroupsCommand.h; sourceTree = "<group>"; };
+		FD8981EF1A98BAE300BD771A /* LoadGroupsCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadGroupsCommand.m; sourceTree = "<group>"; };
 		FDD0D9B81A77C7E30042E72B /* StatusGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusGroupCell.h; sourceTree = "<group>"; };
 		FDD0D9B91A77C7E30042E72B /* StatusGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusGroupCell.m; sourceTree = "<group>"; };
 		FDD0D9BD1A77C82F0042E72B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -301,6 +304,8 @@
 				FDE3B3101A7699FA00FEAFF0 /* ShareCommand.h */,
 				FDE3B3111A7699FA00FEAFF0 /* ShareCommand.m */,
 				FDE3B3151A76A1D500FEAFF0 /* BaseCommand.h */,
+				FD8981EE1A98BAE300BD771A /* LoadGroupsCommand.h */,
+				FD8981EF1A98BAE300BD771A /* LoadGroupsCommand.m */,
 			);
 			path = commands;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD12243C1A74FD5C00EC2772 /* VKStatuses.xcdatamodeld in Sources */,
+				FD8981F01A98BAE300BD771A /* LoadGroupsCommand.m in Sources */,
 				FDE3B3091A7699B700FEAFF0 /* DownloadCommand.m in Sources */,
 				FDE3B30F1A7699EB00FEAFF0 /* SaveEntitiesCommand.m in Sources */,
 				FDD0D9BF1A77C82F0042E72B /* MainViewController.m in Sources */,
